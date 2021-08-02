@@ -1,0 +1,21 @@
+{
+  "name": "node-gyp-opencv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:opencv": "sh ./scripts/build-opencv-contrib.sh",
+    "clean": "sh ./clean.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tripolskypetr/node-gyp-opencv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tripolskypetr/node-gyp-opencv/issues"
+  },
+  "homepage": "https://github.com/tripolskypetr/node-gyp-opencv#readme"
+}
