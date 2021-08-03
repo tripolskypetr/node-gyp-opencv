@@ -1,6 +1,6 @@
 # node-gyp-opencv
 
-> Most basic example of adding a OpenCV C++ add-on to node.js
+> Most basic example of adding a OpenCV C++ add-on into node.js
 
 This example will help you to to get started with your computer vision project by static linking OpenCV 3.4 with [Native Abstractions for Node.js](https://github.com/nodejs/nan). Includes "opencv_contrib" so SIFT and SURF are available
 
