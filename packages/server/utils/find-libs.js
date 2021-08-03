@@ -1,7 +1,7 @@
 const { resolve } = require('path');
 
 // https://github.com/nodejs/node-gyp/issues/49
-const BASE_PATH = '../../3rdparty/opencv/@3.4/lib';
+const BASE_PATH = '../../3rdparty/opencv/@3.4';
 
 const OPENCV_LIBS = [
     "libopencv_aruco.a",
@@ -50,6 +50,25 @@ const OPENCV_LIBS = [
     "libopencv_xphoto.a",
 ];
 
+const SHARED_LIBS = [
+    "libIlmImf.a",
+    "libippicv.a",
+    "libippiw.a",
+    "libittnotify.a",
+    "liblibjasper.a",
+    "liblibjpeg-turbo.a",
+    "liblibpng.a",
+    "liblibprotobuf.a",
+    "liblibtiff.a",
+    "liblibwebp.a",
+    "libquirc.a",
+    "libzlib.a",
+];
+
 OPENCV_LIBS.forEach((file) => {
-    console.log(resolve(`${BASE_PATH}/${file}`))
+    console.log(resolve(`${BASE_PATH}/lib/${file}`))
+});
+
+SHARED_LIBS.forEach((file) => {
+    console.log(resolve(`${BASE_PATH}/share/OpenCV/3rdparty/lib/${file}`));
 });

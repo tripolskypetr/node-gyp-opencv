@@ -20,6 +20,7 @@
         ],
         'libraries': [
             "<!@(node utils/find-libs.js)",
+            "-framework OpenCL"
         ],
         "sources": [
             "./src/main.cc",
