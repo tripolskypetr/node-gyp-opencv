@@ -5,6 +5,7 @@ const BASE_PATH = '../../3rdparty/opencv/@3.4/lib';
 
 const OPENCV_LIBS = [
     'libopencv_core.a',
+    'libopencv_highgui.a',
 ];
 
 OPENCV_LIBS.forEach((file) => {
