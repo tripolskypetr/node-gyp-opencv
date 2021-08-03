@@ -24,7 +24,7 @@
         ],
         "sources": [
             "./src/main.cc",
-            "./src/lib/ModalWindow.cc"
+            "./src/lib/MainAddon.cc"
         ],
     }
   ]

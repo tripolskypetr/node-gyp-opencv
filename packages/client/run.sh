@@ -1,1 +1,1 @@
-npm run clean && npm install && npm start
+npm run clean && npm install && node index.js

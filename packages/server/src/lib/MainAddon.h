@@ -5,15 +5,13 @@
 
 #include <opencv2/opencv.hpp>
 
-#include <iostream>
-
 using namespace v8;
 using namespace node;
 
-class MainWindow: public Nan::ObjectWrap {
+class MainAddon: public Nan::ObjectWrap {
 public:
   static void Init(Local<Object> target);
-  static NAN_METHOD(ViewImage);
+  static NAN_METHOD(CreateImage);
 };
 
 #endif // APPLICATION_H

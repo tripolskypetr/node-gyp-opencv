@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "sh run.sh",
     "clean": "rimraf node_modules"
   },
   "dependencies": {
+    "open-cli": "^7.0.0",
     "server": "file:../server"
   },
   "devDependencies": {

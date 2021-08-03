@@ -9,5 +9,6 @@
   "gypfile": true,
   "devDependencies": {
     "nan": "^2.14.2"
-  }
+  },
+  "dependencies": {}
 }
