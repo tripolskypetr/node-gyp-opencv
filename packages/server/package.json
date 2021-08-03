@@ -6,7 +6,6 @@
   },
   "gypfile": true,
   "dependencies": {
-    "globby": "^12.0.0",
     "nan": "^2.14.2"
   }
 }
