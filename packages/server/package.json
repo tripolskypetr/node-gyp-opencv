@@ -4,5 +4,8 @@
   "scripts": {
     "install": "node-gyp rebuild"
   },
-  "gypfile": true
+  "gypfile": true,
+  "dependencies": {
+    "nan": "^2.14.2"
+  }
 }
