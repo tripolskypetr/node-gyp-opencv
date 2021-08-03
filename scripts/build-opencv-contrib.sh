@@ -1,3 +1,4 @@
+rm -rf 3rdparty/opencv
 mkdir -p 3rdparty/opencv
 rm -rf tmp
 mkdir tmp
@@ -11,8 +12,6 @@ cd build
 cmake \
     -DCMAKE_INSTALL_PREFIX="$(pwd)/../../3rdparty/opencv\@3.4" \
     -DBUILD_SHARED_LIBS=OFF \
-    -DWITH_WEBP=OFF \
-    -D WITH_ITT=OFF \
     -DENABLE_PRECOMPILED_HEADERS=YES \
     -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-master/modules \
     ../opencv-master
