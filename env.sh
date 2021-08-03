@@ -1,2 +1,2 @@
 sudo apt update
-sudo apt install -y cmake g++ realpath
+sudo apt install -y cmake g++
