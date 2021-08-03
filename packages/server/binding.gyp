@@ -6,9 +6,8 @@
             "../../3rdparty/opencv/@3.4/include",
             "<!(node -e \"require('nan')\")"
         ],
-        "libraries": [
-            "-L../../3rdparty/opencv/@3.4/",
-            "-llibopencv_core"
+        'libraries': [
+            "<!@(node utils/find-libs.js)",
         ],
         "sources": [
             "./src/main.cc",
