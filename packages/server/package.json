@@ -8,7 +8,8 @@
   },
   "gypfile": true,
   "devDependencies": {
-    "nan": "^2.14.2"
+    "nan": "^2.14.2",
+    "node-gyp": "^8.1.0"
   },
   "dependencies": {}
 }
