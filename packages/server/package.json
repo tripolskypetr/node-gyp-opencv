@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "node-gyp rebuild",
     "install": "node-gyp rebuild"
   },
   "gypfile": true,
-  "dependencies": {
+  "devDependencies": {
     "nan": "^2.14.2"
   }
 }
