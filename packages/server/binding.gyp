@@ -11,7 +11,8 @@
             "-llibopencv_core"
         ],
         "sources": [
-            "./src/main.cc"
+            "./src/main.cc",
+            "./src/lib/ModalWindow.cc"
         ],
     }
   ]
