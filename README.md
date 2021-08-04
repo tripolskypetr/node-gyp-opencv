@@ -6,9 +6,12 @@ This example will help you to to get started with your computer vision project b
 
 ## Target platform
 
-Tested on Ubuntu 18.04. The [tmp](./tmp) contains OpenCV 3.4 sources and precompiled binaries in `build` folder. So if you are going to drive into development as fast as possible, you should
+Tested on Ubuntu 18.04. The [tmp](./tmp) contains OpenCV 3.4 precompiled binaries in `build` zip archive. So if you are going to drive into development as fast as possible, you should
 
 ```
+sudo apt update
+sudo apt install unzip
+unzip ../build.zip && cd build
 sudo make install
 sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf' 
 sudo ldconfig
