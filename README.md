@@ -4,10 +4,20 @@
 
 This example will help you to to get started with your computer vision project by linking OpenCV 3.4 with [Native Abstractions for Node.js](https://github.com/nodejs/nan). Includes "opencv_contrib" so SIFT and SURF are available
 
+## Target platform
+
+Tested on Ubuntu 18.04. The [tmp](./tmp) contains OpenCV 3.4 sources and precompiled binaries in `build` folder. So if you are going to drive into development as fast as possible, you should
+
+```
+sudo make install
+sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf' 
+sudo ldconfig
+```
+
 ## Usage
 
 ```
-npm run build:opencv
+npm run install:opencv
 cd packages/client
 npm install
 npm start
