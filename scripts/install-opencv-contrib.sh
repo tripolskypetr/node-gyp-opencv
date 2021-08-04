@@ -9,4 +9,6 @@ cmake \
     ../opencv-master
 cmake --build .
 make -j8
-make install
+sudo make install
+sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf' 
+sudo ldconfig
