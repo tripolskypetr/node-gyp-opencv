@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:opencv": "sh ./scripts/build-opencv-contrib.sh",
+    "install:opencv": "sh ./scripts/install-opencv-contrib.sh",
     "clean": "sh ./clean.sh"
   },
   "repository": {

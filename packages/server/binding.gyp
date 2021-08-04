@@ -3,8 +3,7 @@
     {
         "target_name": "addon",
         "cflags": [
-            "-std=c++11",
-            "-stdlib=libc++"
+            "-std=c++11"
         ],
         "cflags_cc!": [
             "-fno-rtti",
@@ -15,12 +14,11 @@
             "GCC_ENABLE_CPP_EXCEPTIONS": "YES",
         },
         "include_dirs": [
-            "../../3rdparty/opencv/@3.4/include",
+            "<!@(pkg-config opencv --cflags)",
             "<!(node -e \"require('nan')\")"
         ],
         'libraries': [
-            "<!@(node utils/find-libs.js)",
-            "-framework OpenCL"
+            "<!@(pkg-config opencv --libs)"
         ],
         "sources": [
             "./src/main.cc",
