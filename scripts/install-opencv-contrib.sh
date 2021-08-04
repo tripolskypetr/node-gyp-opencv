@@ -8,4 +8,5 @@ cmake \
     -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-master/modules \
     ../opencv-master
 cmake --build .
-make -j8 install
+make -j8
+make install
